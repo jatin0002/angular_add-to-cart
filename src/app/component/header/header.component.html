@@ -11,6 +11,8 @@
             type="text"
             class="form-control"
             placeholder="Search Products"
+            [(ngModel)]="searchTerm"
+            (keyup)="search($event)"
           />
         </div>
         <span class="fas fa-search search-icon"> </span>
